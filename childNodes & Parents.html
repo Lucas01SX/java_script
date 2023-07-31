@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Attributes</title>
+    </head>
+    <body>
+    
+        <main id="container">
+            <div id="lista-container">
+                <ul id="lista">
+                    <li>Item 01</li>
+                    <li>Item 02</li>
+                    <li>Item 03</li>
+                </ul>
+            </div>
+        </main>
+        
+        <script>
+            const main = document.getElementById('container');
+            const div = document.getElementById('lista-container');
+            const ul = document.getElementById('lista');
+
+            /* ul.childNodes[1].innerHTML = 'Olá mundo!' */ 
+
+            /* console.log(ul.childNodes[1]) */ 
+            /* console.log(document.documentElement.firstChild) */
+            /* console.log(document.documentElement.lastChild) */ 
+            console.log(ul.parentNode.parentNode) /* parentNode retorna o item anterior ao descrito */ 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Class List</title>
+        <!--<style src="./classlist.css"></style>-->
+        <style>
+            .blue {
+                color: blue;
+            }
+
+            .red {
+                color: #f33;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="text" class="texto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+
+        <!--<script src="./classlist.js"></script> -->
+        <script>
+            const texto = document.getElementById('text');
+
+            texto.classList.add('blue');
+            /** texto.classList.remove('texto');
+
+            texto.classList.remove('blue');
+
+            texto.classList.add('red'); */ 
+
+            if(texto.classList.contains('blue')) {
+                alert ('Elemento contém a classe Blue')
+            }
+
+            console.log(texto)
+        </script>
+    </body>
+</html>

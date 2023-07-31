@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elements 2</title>
+    </head>
+    <body>
+
+        <p name="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+
+        <span>Hello World!</span>
+        <span>Hello World!</span>
+        <span>Hello World!</span>
+        <span>Hello World!</span>
+        <span>Hello World!</span>
+
+        <script>
+            const texto = document.getElementsByName('text');
+            const span = document.getElementsByTagName('span');
+
+            /* console.log(texto[0].tagName) */ 
+            console.log(span[0])
+            span[1].innerHTML= 'Olá mundo!'
+        </script>
+        
+    </body>
+</html>

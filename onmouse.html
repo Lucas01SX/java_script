@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>OnMouse</title>
+    </head>
+    <body>
+        
+        <!-- <p onmouseover="trocarTexto()">Passe o mouse aqui</p> -->
+
+        <!-- <p onmousedown="trocarTexto()">Passe o mouse aqui</p> Quando clicar em cima do texto executa a função-->
+
+        <p onmouseout="trocarTexto()">Passe o mouse aqui</p>
+
+        <script>
+            function trocarTexto() {
+            const texto = document.querySelector('p');
+
+            texto.innerHTML = 'Olá :)'
+            }
+        </script>
+
+    </body>
+</html>
